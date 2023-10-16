@@ -1,59 +1,66 @@
-@import url('./vars.css');   
-body{
+@import url('./vars.css');
+
+body {
     font-family: var(--ff-secondary);
 }
-.top-container{
+
+.top-container {
     margin: -0.625rem;
-    width: 101%; 
+    width: 101%;
 }
-.top-rectangle{
+
+.top-rectangle {
     display: flex;
     background: var(--clr-main);
-    height: 30vh; 
-    width: 100%; 
-    margin: 0; 
+    height: 30vh;
+    width: 100%;
+    margin: 0;
 }
-.logo-scale{
+
+.logo-scale {
     width: 30%;
-   height: 75%;
-   margin-top: 1.5rem;
+    height: 75%;
+   margin-top: 0.5rem;
+   margin-left: -2.5rem;
 }
-.top-nav{
+
+.top-nav {
     display: flex;
     align-items: center;
     margin-top: 5rem;
     margin-bottom: 8rem;
 }
 
-.nav-list{
+.nav-list {
     display: flex;
     align-items: center;
-    padding: 0; 
-    gap: 2rem; 
+    padding: 0;
+    gap: 2rem;
     list-style: none;
     margin: auto;
-    
+
 }
 
-.nav-list-link{
-    text-decoration: none; 
+.nav-list-link {
+    text-decoration: none;
     color: var(--clr-red-secondary);
     font-size: var(--fs-md);
     font-family: var(--ff-secondary);
-    padding: 1rem 4rem; 
-  border-radius: 1.5rem; 
-  background-color:var( --clr-yellow); 
+    padding: 1rem 4rem;
+    border-radius: 1.5rem;
+    background-color: var(--clr-yellow);
 }
 
-.recipes-container{
-    display: grid; 
-    width: 80vw; 
+.recipes-container {
+    display: grid;
+    width: 80vw;
     margin: 2rem auto;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /**/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /**/
     gap: 1.5rem;
 }
 
-.recipe{
+.recipe {
     display: grid;
     background: var(--clr-white-bg);
     border-radius: 2rem;
@@ -61,43 +68,44 @@ body{
     padding: 2rem 1rem;
 }
 
-.recipe-title{
+.recipe-title {
     margin: 1rem 0 0;
     font-size: var(--fs-md);
     font-family: var(--ff-main);
     color: var(--clr-gray-text);
 }
 
-.recipe-text{
+.recipe-text {
     font-size: var(--fs-nm);
     color: var(--clr-gray-text);
+    text-align: justify;
 }
 
-.top10-container{
+.top10-container {
     text-align: center;
 }
 
-.top10-title{
+.top10-title {
     font-family: var(--ff-main);
     font-size: clamp(var(--fs-md), 1.875rem, var(--fs-lg));
     margin: 1rem auto;
     width: 25ch;
 }
 
-.recipe-thumb{
+.recipe-thumb {
     display: flex;
-    position: relative; 
+    position: relative;
     padding: 0 1rem;
 }
 
-.recipe-image{
+.recipe-image {
     display: block;
     width: 100%;
     border-radius: 1rem;
 }
 
 
-.recipe-price{
+.recipe-price {
     display: block;
     position: absolute;
     background: var(--clr-white);
@@ -110,15 +118,63 @@ body{
     transform: translate(-50%, 0);
 }
 
-.btn{
+.details {
+    text-decoration: none;
+    font-size: var(--fs-sm);
+    color: var(--clr-gray-text);
+    padding: .5rem 1rem;
+    border-radius: 1.5rem;
+    background-color: var(--clr-white); 
+  }
+
+.rating {
+    margin-top: 1rem;
+    text-align: center;
+    position: absolute;
+    margin-top: -2.5rem;
+    margin-left: -1.5rem;
+    background: var(--clr-gray-text);
+    margin-top: -2rem; 
+    margin-left: -2rem;
+    border-radius: 1.5rem 0 1.5rem 0; 
+}
+
+
+.star {
+    font-size: 2rem;
+    color: gold;
+    cursor: pointer;
+    margin-right: 0.313rem;
+}
+
+.star::before {
+    content: "\2605";
+}
+
+.star:hover {
+    color: orange;/
+}
+
+.nav-list-link:hover {
+    background-color: #1e70b9;
+  }
+
+.btn {
+    margin-top: 5rem;
     display: flex;
     align-items: center;
     background: var(--clr-yellow);
     padding: .5rem 2rem;
     border-radius: 1.5rem;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.cta-container{
+.btn:hover {
+    background-color: #1e70b9;
+  }
+
+
+.cta-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,14 +182,16 @@ body{
 }
 
 
-.footer-container{
+.footer-container {
     margin: -0.625rem;
-    width: 101%; 
+    width: 101%;
 }
+
 .bottom-rectangle {
+    margin-top: 15rem;
     display: flex;
     background: var(--clr-yellow);
-    height: 70vh; 
-    width: 100%; 
-    margin: 0; 
-  }
+    height: 70vh;
+    width: 100%;
+    ;
+}
