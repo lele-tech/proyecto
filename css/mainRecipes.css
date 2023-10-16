@@ -1,12 +1,17 @@
 @import url('./vars.css');   
-
-
+body{
+    font-family: var(--ff-secondary);
+}
+.top-container{
+    margin: -0.625rem;
+    width: 101%; 
+}
 .top-rectangle{
     display: flex;
     background: var(--clr-main);
-    height: 10rem;  
-    margin-left: -1rem;
-    margin-top: -1rem;
+    height: 30vh; 
+    width: 100%; 
+    margin: 0; 
 }
 .logo-scale{
     width: 30%;
@@ -55,7 +60,6 @@
     text-align: center;
     padding: 2rem 1rem;
 }
-
 
 .recipe-title{
     margin: 1rem 0 0;
@@ -106,4 +110,30 @@
     transform: translate(-50%, 0);
 }
 
+.btn{
+    display: flex;
+    align-items: center;
+    background: var(--clr-yellow);
+    padding: .5rem 2rem;
+    border-radius: 1.5rem;
+}
 
+.cta-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+
+.footer-container{
+    margin: -0.625rem;
+    width: 101%; 
+}
+.bottom-rectangle {
+    display: flex;
+    background: var(--clr-yellow);
+    height: 70vh; 
+    width: 100%; 
+    margin: 0; 
+  }
