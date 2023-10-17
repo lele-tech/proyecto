@@ -1,0 +1,31 @@
+.recipe-title {
+    margin: 1rem 0 0;
+    font-size: var(--fs-md);
+    font-family: var(--ff-main);
+    color: var(--clr-gray-text);
+}
+
+.recipe-text {
+    font-size: var(--fs-nm);
+    color: var(--clr-gray-text);
+    text-align: justify;
+}
+.top10-title {
+    font-family: var(--ff-main);
+    font-size: clamp(var(--fs-usm), 1.875rem, var(--fs-lg));
+    margin: 1rem auto;
+    width: 25ch;
+}
+
+.recipe-price {
+    display: block;
+    position: absolute;
+    background: var(--clr-white);
+    text-align: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    padding: .5rem 2rem;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}

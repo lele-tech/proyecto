@@ -1,0 +1,27 @@
+.footer-container{
+    background: var(--clr-yellow); 
+    margin: 2rem 0 0;
+    width: 100%;
+    display: grid;
+    margin-left: 0;
+}
+
+.footer-content{
+    display: grid;
+    width: 80vw; 
+    margin: 2rem auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.nav-bottom-list{
+    padding: 0; 
+    list-style-type: none;
+}
+

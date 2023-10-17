@@ -1,197 +1,54 @@
-@import url('./vars.css');
+@import url('./abstracts/vars.css');
+@import url('./layout/footer.css');
+@import url('./layout/grid.css');
+@import url('./layout/navigation.css');
+@import url('./layout/header.css');
+@import url('./base/base.css');
+@import url('./base/typography.css');
+@import url('./components/components.css');
 
-body {
-    font-family: var(--ff-secondary);
+
+
+
+@media (max-width: 764px){
+
+    .body{
+       font-size: 0.175rem;
+    }
+
+    .logo-scale{
+        width: 37%;
+        height: 60%;
+        margin-left: -.5rem;
+    }
+     .top-rectangle{
+        height: 12vh;
+        width: 102.9%;
+     }
+
+     .top-nav{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+     }
+     .category-nav{
+      margin: 2rem;
+     }
+     .nav-list{
+        gap:1rem;
+     }
+     .nav-list-link{
+        padding: .5rem .8rem;
+        font-size: var(--fs-usm);
+     }
+
+
+     .bottom-rectangle{
+        height: 45vh;
+        width: 105%;
+        margin-top: 6rem;
+     }
+
+     
+
 }
 
-.top-container {
-    margin: -0.625rem;
-    width: 101%;
-}
-
-.top-rectangle {
-    display: flex;
-    background: var(--clr-main);
-    height: 30vh;
-    width: 100%;
-    margin: 0;
-}
-
-.logo-scale {
-    width: 30%;
-    height: 75%;
-   margin-top: 0.5rem;
-   margin-left: -2.5rem;
-}
-
-.top-nav {
-    display: flex;
-    align-items: center;
-    margin-top: 5rem;
-    margin-bottom: 8rem;
-}
-
-.nav-list {
-    display: flex;
-    align-items: center;
-    padding: 0;
-    gap: 2rem;
-    list-style: none;
-    margin: auto;
-
-}
-
-.nav-list-link {
-    text-decoration: none;
-    color: var(--clr-red-secondary);
-    font-size: var(--fs-md);
-    font-family: var(--ff-secondary);
-    padding: 1rem 4rem;
-    border-radius: 1.5rem;
-    background-color: var(--clr-yellow);
-}
-
-.recipes-container {
-    display: grid;
-    width: 80vw;
-    margin: 2rem auto;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    /**/
-    gap: 1.5rem;
-}
-
-.recipe {
-    display: grid;
-    background: var(--clr-white-bg);
-    border-radius: 2rem;
-    text-align: center;
-    padding: 2rem 1rem;
-}
-
-.recipe-title {
-    margin: 1rem 0 0;
-    font-size: var(--fs-md);
-    font-family: var(--ff-main);
-    color: var(--clr-gray-text);
-}
-
-.recipe-text {
-    font-size: var(--fs-nm);
-    color: var(--clr-gray-text);
-    text-align: justify;
-}
-
-.top10-container {
-    text-align: center;
-}
-
-.top10-title {
-    font-family: var(--ff-main);
-    font-size: clamp(var(--fs-md), 1.875rem, var(--fs-lg));
-    margin: 1rem auto;
-    width: 25ch;
-}
-
-.recipe-thumb {
-    display: flex;
-    position: relative;
-    padding: 0 1rem;
-}
-
-.recipe-image {
-    display: block;
-    width: 100%;
-    border-radius: 1rem;
-}
-
-
-.recipe-price {
-    display: block;
-    position: absolute;
-    background: var(--clr-white);
-    text-align: center;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    padding: .5rem 2rem;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-
-.details {
-    text-decoration: none;
-    font-size: var(--fs-sm);
-    color: var(--clr-gray-text);
-    padding: .5rem 1rem;
-    border-radius: 1.5rem;
-    background-color: var(--clr-white); 
-  }
-
-.rating {
-    margin-top: 1rem;
-    text-align: center;
-    position: absolute;
-    margin-top: -2.5rem;
-    margin-left: -1.5rem;
-    background: var(--clr-gray-text);
-    margin-top: -2rem; 
-    margin-left: -2rem;
-    border-radius: 1.5rem 0 1.5rem 0; 
-}
-
-
-.star {
-    font-size: 2rem;
-    color: gold;
-    cursor: pointer;
-    margin-right: 0.313rem;
-}
-
-.star::before {
-    content: "\2605";
-}
-
-.star:hover {
-    color: orange;/
-}
-
-.nav-list-link:hover {
-    background-color: #1e70b9;
-  }
-
-.btn {
-    margin-top: 5rem;
-    display: flex;
-    align-items: center;
-    background: var(--clr-yellow);
-    padding: .5rem 2rem;
-    border-radius: 1.5rem;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.btn:hover {
-    background-color: #1e70b9;
-  }
-
-
-.cta-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5rem;
-}
-
-
-.footer-container {
-    margin: -0.625rem;
-    width: 101%;
-}
-
-.bottom-rectangle {
-    margin-top: 15rem;
-    display: flex;
-    background: var(--clr-yellow);
-    height: 70vh;
-    width: 100%;
-    ;
-}
