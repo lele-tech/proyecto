@@ -30,6 +30,24 @@
     background-color: var(--clr-yellow);
 }
 
+.home-nav-list {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: clamp(var(--fs-md), 2rem, var(--fs-xl));
+    font-weight: var(--fw-md);
+    font-family: var(--ff-main);
+    padding: .8rem;
+}
+
+.home-list {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    margin:0 1rem;
+    padding: 0;
+}
+
 .nav-list-link:hover {
     background-color: #1e70b9;
   }

@@ -13,7 +13,7 @@
 .top10-title {
     font-family: var(--ff-main);
     font-size: clamp(var(--fs-usm), 1.875rem, var(--fs-lg));
-    margin: 1rem auto;
+    margin: 2rem auto;
     width: 25ch;
 }
 
