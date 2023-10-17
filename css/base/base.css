@@ -1,3 +1,5 @@
 body {
     font-family: var(--ff-secondary);
+    margin: 0;
+    padding: 0;
 }

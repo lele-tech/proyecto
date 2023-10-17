@@ -29,3 +29,8 @@
     left: 50%;
     transform: translate(-50%, 0);
 }
+
+.footer-legal{
+    text-align: center;
+    font-size: var(--fs-md);
+}
