@@ -57,6 +57,14 @@
     list-style: none;
 }
 
+.mobile-check {
+    opacity: 0;
+    position: fixed;
+    top: 3.5rem;
+    right: 2.25rem;
+    z-index: 4;
+}
+
 @media (max-width: 767px) {
 
     .mobile-btn {
@@ -76,7 +84,7 @@
         position: absolute;
         width: 100%;
         height: .2rem;
-        background: var(--clr-main);
+        background: var(--clr-yellow);
         transition-duration: .25s;
     }
 
@@ -112,7 +120,7 @@
         position: fixed;
         margin: 0;
         top: 0;
-        right: 0rem;
+        right: -15rem;
         width: 50%;
         height: 100vh;
         background: var(--clr-black);
@@ -121,7 +129,7 @@
         padding-left: 2rem;
         z-index: 2;
         transition: right 0.5s;
-        /* Ajusta la duración de la transición aquí */
+        opacity: 20%;
     }
 
 
