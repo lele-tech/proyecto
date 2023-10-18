@@ -121,7 +121,7 @@
     }
 
     .mobile-check:checked ~ .home-list{
-        right: -15rem;
+        right: 0;
     }
     /* mobile check */
 
@@ -140,7 +140,7 @@
         padding-left: 2rem;
         z-index: 2;
         transition: right 0.5s;
-        opacity: 0.2;
+       
     }
 
 
