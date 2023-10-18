@@ -47,3 +47,12 @@
     max-width: 50rem; 
     margin: 0 auto; 
 }
+
+.home-tittle{
+    font-size: var(--fs-xl);
+    text-align: center;
+    color: var(--clr-white);
+    width: 15ch;
+    margin: auto;
+    margin-top: 8rem;
+}

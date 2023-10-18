@@ -55,4 +55,10 @@
       gap:1rem;
    }
 
+   .home-tittle{
+      font-size: var(--fs-lg);
+      margin: 2rem  -3rem auto;
+
+   }
+
 }
