@@ -34,7 +34,7 @@
 .home-nav-list {
     text-decoration: none;
     color: var(--clr-white);
-    font-size: clamp(var(--fs-md), 2rem, var(--fs-xl));
+    font-size: clamp(var(--fs-nm), 1rem, var(--fs-lg));
     font-weight: var(--fw-md);
     font-family: var(--ff-main);
     padding: .8rem;

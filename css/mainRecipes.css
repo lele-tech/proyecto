@@ -51,5 +51,8 @@
    .process-container{
       max-width: 22rem; 
    }
+   .about-list{
+      gap:1rem;
+   }
 
 }
