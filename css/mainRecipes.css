@@ -17,7 +17,7 @@
    }
 
    .logo-scale {
-      width: 55%;
+      width: 35%;
       height: 60%;
    }
 
@@ -27,7 +27,7 @@
    }
 
    .category-nav {
-      margin: 1rem;
+      margin: 3rem 0 3rem;
    }
 
    .nav-list {
@@ -40,9 +40,7 @@
    }
 
 
-   .home-nav-list {
-      font-size: var(--fs-usm);
-   }
+  
 
    .top10-title {
       font-size: var(--fs-nm);

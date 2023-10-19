@@ -47,5 +47,11 @@
     padding: 0; 
     gap: 2rem; 
     list-style: none;
-    margin: auto 1rem;
+    margin: 2rem;
+}
+
+.process-container {
+    text-align: center; 
+    max-width: 55%; 
+    margin: 8rem auto 8rem; 
 }
