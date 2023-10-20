@@ -26,7 +26,7 @@
     color: var(--clr-red-secondary);
     font-size: var(--fs-md);
     font-family: var(--ff-secondary);
-    padding: 1rem 4rem;
+    padding: 1rem 3rem;
     border-radius: 1.5rem;
     background-color: var(--clr-yellow);
 }
@@ -51,16 +51,21 @@
     background-color: #1e70b9;
 }
 
-.ingredients-list {
-    list-style: none;
-}
-
 .mobile-check {
     opacity: 0;
     position: fixed;
     top: 3.5rem;
     right: 2.25rem;
     z-index: 4;
+}
+.about-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Esto justificará los elementos */
+    padding: 0;
+    gap: 1rem;
+    list-style: none;
+    margin: 2rem;
 }
 
 @media (max-width: 767px) {
@@ -130,7 +135,7 @@
         position: fixed;
         margin: 0;
         top: 0;
-        right: -15rem;
+        right: -20rem;
         width: 50%;
         height: 100vh;
         background: var(--clr-black);
@@ -142,6 +147,26 @@
         gap: 4rem;
     }
 
+    .top-nav {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
 
+    .category-nav {
+        margin: 3rem 0 3rem;
+    }
+
+    .nav-list {
+        gap: 1rem;
+    }
+
+    .nav-list-link {
+        padding: .5rem .8rem;
+        font-size: var(--fs-usm);
+    }
+    .about-list{
+        gap:1rem;
+        margin: 2rem;
+     }
 
 }

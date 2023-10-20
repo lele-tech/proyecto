@@ -55,3 +55,34 @@
 .comidas-tittle{
     margin-top: 7rem;
 }
+
+.ingredients-list {
+    list-style: none;
+}
+.ingredients-text{
+    margin-top: 4rem;
+}
+@media (max-width: 767.8px) {
+
+    .top10-title {
+       font-size: var(--fs-nm);
+    }
+ 
+    .home-tittle{
+       font-size: var(--fs-lg);
+       margin: 2rem  -3rem auto;
+    }
+
+    .recipe-text{
+        margin: 1rem;
+    }
+
+    .ingredients-list{
+        margin: 1rem 0 0 -2rem;
+    }
+
+    .ingredients-text{
+        margin-top: 1rem;
+    }
+ 
+ }

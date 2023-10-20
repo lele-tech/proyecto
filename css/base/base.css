@@ -3,3 +3,10 @@ body {
     margin: 0;
     padding: 0;
 }
+
+@media (max-width: 767.8px) {
+
+    .body {
+       font-size: 0.175rem;
+    }
+}
