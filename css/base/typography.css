@@ -1,3 +1,4 @@
+/* Clase para el título de la receta */
 .recipe-title {
     margin: 1rem 0 0;
     font-size: var(--fs-md);
@@ -5,11 +6,14 @@
     color: var(--clr-gray-text);
 }
 
+/* Clase para el texto de la receta */
 .recipe-text {
     font-size: var(--fs-nm);
     color: var(--clr-gray-text);
     text-align: justify;
 }
+
+/* Clase para el título "Top 10" */
 .top10-title {
     font-family: var(--ff-main);
     font-size: clamp(var(--fs-usm), 1.875rem, var(--fs-lg));
@@ -17,6 +21,7 @@
     width: 25ch;
 }
 
+/* Clase para el precio de la receta */
 .recipe-price {
     display: block;
     position: absolute;
@@ -30,11 +35,13 @@
     transform: translate(-50%, 0);
 }
 
+/* Clase derechos reservados en el pie de página legal */
 .footer-legal{
     text-align: center;
     font-size: var(--fs-md);
 }
 
+/* Clase para la descripción de la receta */
 .description-recipe{
     display: grid;
     background: var(--clr-white-bg);
@@ -42,7 +49,7 @@
     padding: 2rem 1rem;
 }
 
-
+/* Clase para el título de la página de inicio */
 .home-tittle{
     font-size: var(--fs-xl);
     text-align: center;
@@ -52,35 +59,43 @@
     margin-top: 8rem;
 }
 
+/* Clase para el título de comidas */
 .comidas-tittle{
     margin-top: 7rem;
 }
 
+/* Clase quitar estilo a la lista de ingredientes */
 .ingredients-list {
     list-style: none;
 }
+
+/* Clase para el texto de los ingredientes */
 .ingredients-text{
     margin-top: 4rem;
 }
+
+/* Estilos para pantallas más pequeñas*/
 @media (max-width: 767.8px) {
 
+    /* Clase para el título "Top 10" en pantallas pequeñas */
     .top10-title {
        font-size: var(--fs-nm);
     }
- 
+    /* Clase para el título de la página de inicio en pantallas pequeñas */
     .home-tittle{
        font-size: var(--fs-lg);
        margin: 2rem  -3rem auto;
     }
-
+    /* Clase para el texto de la receta en pantallas pequeñas */
     .recipe-text{
         margin: 1rem;
     }
 
+     /* Clase para la lista de ingredientes en pantallas pequeñas */
     .ingredients-list{
         margin: 1rem 0 0 -2rem;
     }
-
+    /* Clase para el texto de los ingredientes en pantallas pequeñas */
     .ingredients-text{
         margin-top: 1rem;
     }

@@ -1,17 +1,18 @@
+/* Clase para la barra de navegación superior */
 .top-nav {
     display: flex;
     align-items: center;
     margin: 2rem;
-
 }
 
+/* Clase para la barra de navegación de categorías */
 .category-nav {
     display: flex;
     align-items: center;
     margin: 5rem;
-
 }
 
+/* Clase para la lista de navegación */
 .nav-list {
     display: flex;
     align-items: center;
@@ -21,6 +22,7 @@
     margin: auto;
 }
 
+/* Clase para los enlaces de navegación */
 .nav-list-link {
     text-decoration: none;
     color: var(--clr-red-secondary);
@@ -31,6 +33,7 @@
     background-color: var(--clr-yellow);
 }
 
+/* Clase para los enlaces de navegación de inicio */
 .home-nav-list {
     text-decoration: none;
     color: var(--clr-white);
@@ -39,6 +42,7 @@
     padding: .8rem;
 }
 
+/* Clase para la lista de inicio */
 .home-list {
     display: flex;
     align-items: center;
@@ -47,10 +51,12 @@
     margin: 0 1rem;
 }
 
+/* Estilos para el enlace de navegación al ser hover */
 .nav-list-link:hover {
     background-color: #1e70b9;
 }
 
+/* Clase para el botón móvil */
 .mobile-check {
     opacity: 0;
     position: fixed;
@@ -58,6 +64,8 @@
     right: 2.25rem;
     z-index: 4;
 }
+
+/* Clase para la lista "Acerca de" */
 .about-list {
     display: flex;
     align-items: center;
@@ -68,8 +76,9 @@
     margin: 2rem;
 }
 
+/* Estilos para pantallas más pequeñas (menos de 767px de ancho) */
 @media (max-width: 767px) {
-
+    /* Clase para el botón móvil */
     .mobile-btn {
         position: fixed;
         top: 4rem;
@@ -100,7 +109,7 @@
         top: .5rem;
     }
 
-    /* mobile check */
+    /* Clase para la casilla de verificación móvil */
     .mobile-check {
         opacity: 0;
         position: fixed;
@@ -123,13 +132,7 @@
         transform: rotate(90deg);
     }
 
-    .mobile-check:checked~.home-list {
-        right: 0;
-    }
-
-    /* mobile check */
-
-
+    /* Clase para la lista de inicio en movil*/
     .home-list {
         display: grid;
         position: fixed;
@@ -147,26 +150,29 @@
         gap: 4rem;
     }
 
+    /* Clase para el top-nav de inicio en movil*/
     .top-nav {
         margin-top: 3rem;
         margin-bottom: 3rem;
     }
 
+    /* Clase para categori nav en movil*/
     .category-nav {
         margin: 3rem 0 3rem;
     }
 
+    /* Clase para  nav-list en movil*/
     .nav-list {
         gap: 1rem;
     }
-
+     /* Clase para  nav-list-link en movil*/
     .nav-list-link {
         padding: .5rem .8rem;
         font-size: var(--fs-usm);
     }
+     /* Clase para lista "acerca de" en movil*/
     .about-list{
         gap:1rem;
         margin: 2rem;
      }
-
 }
