@@ -84,7 +84,7 @@
     /* Clase para el título de la página de inicio en pantallas pequeñas */
     .home-tittle{
        font-size: var(--fs-lg);
-       margin: 2rem  -3rem auto;
+       margin: 2rem  -4rem auto;
     }
     /* Clase para el texto de la receta en pantallas pequeñas */
     .recipe-text{
